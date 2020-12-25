@@ -1,8 +1,42 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* GLOBALES */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* HEADER */
-.site-header.inicio{
-    background: url(../img/header.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 600px;
+.site-header.inicio {
+  background: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/*NAVBAR*/
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-style: 18px;
+  margin-right: 20px;
+}
+
+.navegacion a:hover{
+    color: blue;
+}
+
+.navegacion a:last-of-type{
+    margin: 0;
 }
