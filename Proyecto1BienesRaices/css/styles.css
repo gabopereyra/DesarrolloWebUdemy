@@ -1,5 +1,11 @@
 html {
+  box-sizing: border-box;
   font-size: 62.5%; /*Seteo del REM, para que cada REM sea igual a 10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -7,6 +13,10 @@ body {
 }
 
 /* GLOBALES */
+img {
+  max-width: 100%;
+}
+
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
@@ -36,12 +46,36 @@ section {
   margin-bottom: 2rem;
 }
 
-.fw-300{
-    font-weight: 300;
+.fw-300 {
+  font-weight: 300;
 }
 
-.centrar-texto{
-    text-align: center;
+.centrar-texto {
+  text-align: center;
+}
+
+.d-block {
+  display: block !important;
+}
+
+/*BOTONES*/
+.boton {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-amarillo {
+  background-color: #e08709;
+}
+
+.boton-verde {
+  background-color: #71b100;
 }
 
 /* HEADER */
@@ -103,4 +137,77 @@ section {
 
 .iconos h3 {
   text-transform: uppercase;
+}
+
+/*Anuncios*/
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anuncio {
+  flex-basis: calc(33.3% - 1rem);
+  border: 1px solid #b5b5b5;
+  background: #f5f5f5;
+}
+
+.contenido-anuncios {
+  padding: 1.5rem;
+}
+
+.contenido-anuncios h3 {
+  margin: 0;
+}
+
+.precio {
+  color: #71b100;
+  font-weight: 700;
+}
+
+.iconos-caracteristicas{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconos-caracteristicas li{
+  display: flex;
+}
+
+.iconos-caracteristicas li p{
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.iconos-caracteristicas li img{
+  margin-right: 2rem;
+}
+
+
+
+
+
+.ver-todas {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Contacto home*/
+.imagen-contacto {
+  background-image: url(../img/encuentra.jpg);
+  height: 40rem;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-contacto {
+  flex: 1;
+  color: white;
+}
+
+.contenido-contacto p{
+  font-size: 1.8rem;
 }
