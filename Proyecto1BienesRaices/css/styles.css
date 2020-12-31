@@ -58,11 +58,11 @@ section {
   display: block !important;
 }
 
-.contenido-centrado{
+.contenido-centrado {
   max-width: 80rem;
 }
 
-.interlineado-4{
+.interlineado-4 {
   line-height: 4rem;
 }
 
@@ -76,6 +76,10 @@ section {
   padding: 1rem 3rem;
   margin-top: 3rem;
   text-align: center;
+  border: none;
+}
+.boton:hover{
+  cursor: pointer;
 }
 
 .boton-amarillo {
@@ -87,7 +91,7 @@ section {
 }
 
 /* HEADER */
-.site-header{
+.site-header {
   background-color: #333333;
   padding: 1rem 0 3rem 0;
 }
@@ -288,13 +292,13 @@ section {
   border-radius: 2rem;
 }
 
-.testimonial p{
+.testimonial p {
   text-align: right;
   font-size: 2.3rem;
 }
 
-.testimonial blockquote::before{
-  content: '';
+.testimonial blockquote::before {
+  content: "";
   background-image: url(../img/comilla.svg);
   width: 4rem;
   height: 4rem;
@@ -303,38 +307,38 @@ section {
   left: -1rem;
 }
 
-.testimonial blockquote{
+.testimonial blockquote {
   position: relative;
   padding-left: 5rem;
   font-weight: 300;
 }
 
 /*FOOTER*/
-.site-footer{
+.site-footer {
   background-color: #333333;
   margin: 0;
 }
 
-.contenedor-footer{
+.contenedor-footer {
   padding: 3rem 0;
   display: flex;
   justify-content: space-between;
 }
 
-.copyright{
+.copyright {
   margin: 0;
   color: white;
 }
 
 /*PAGINAS INTERNAS*/
 /*NOSOTROS*/
-.contenido-nosotros{
+.contenido-nosotros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4rem;
 }
 
-.texto-nosotros blockquote{
+.texto-nosotros blockquote {
   font-weight: 900;
   font-size: 2rem;
   margin: 0;
@@ -342,8 +346,55 @@ section {
 }
 
 /* ANUNCIOS */
-.resumen-propiedad{
+.resumen-propiedad {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* CONTACTO */
+form {
+  font-size: 1.6rem;
+  color: #4f4f4f;
+}
+legend {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+fieldset {
+  margin-bottom: 2.2rem;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+textarea {
+  height: 20rem;
+}
+input[type="radio"] {
+  width: auto;
+}
+
+select {
+  appearance: none;
+}
+
+.forma-contacto {
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
 }
