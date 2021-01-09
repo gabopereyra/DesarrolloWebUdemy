@@ -8,102 +8,135 @@
       src="https://kit.fontawesome.com/b22b53071d.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header><h1>Gabo Pereyra, FreeLancer</h1></header>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Sobre mi</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contacto</a>
-    </nav>
-    <section>
-      <h2>Diseño y desarrollo Web Freelance</h2>
-
-      <p><i class="fas fa-map-marker-alt"></i>Rosario, Argentina</p>
-      <a href="#">Contactar</a>
+    <header>
+      <h1 class="titulo">Gabo Pereyra, <span>FreeLancer</span></h1>
+    </header>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Diseño y desarrollo Web <span>Freelance</span></h2>
+        <div class="ubicacion">
+          <p><i class="fas fa-map-marker-alt"></i> Rosario, Argentina</p>
+        </div>
+        <a href="#" class="boton">Contactar</a>
+      </div>
     </section>
 
-    <main>
+    <main class="contenedor sombra">
       <h2>Mis Servicios</h2>
+      <div class="servicios">
+        <section class="servicio">
+          <h3>Diseño Web</h3>
+          <div class="iconos">
+            <i class="fas fa-palette"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+            corporis expedita temporibus officia. Necessitatibus, earum
+            architecto illum enim, similique numquam atque assumenda voluptates
+            dignissimos sapiente voluptas ex sit? Placeat, odit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </section>
+
+        <section class="servicio">
+          <h3>Aplicaciones Móviles</h3>
+          <div class="iconos">
+            <i class="fab fa-android"></i>
+            <i class="fab fa-apple"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+            corporis expedita temporibus officia. Necessitatibus, earum
+            architecto illum enim, similique numquam atque assumenda voluptates
+            dignissimos sapiente voluptas ex sit? Placeat, odit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </section>
+
+        <section class="servicio">
+          <h3>E-Commerce</h3>
+          <div class="iconos">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+            corporis expedita temporibus officia. Necessitatibus, earum
+            architecto illum enim, similique numquam atque assumenda voluptates
+            dignissimos sapiente voluptas ex sit? Placeat, odit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </section>
+      </div>
+
       <section>
-        <h3>Diseño Web</h3>
-        <i class="fas fa-palette"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-          corporis expedita temporibus officia. Necessitatibus, earum architecto
-          illum enim, similique numquam atque assumenda voluptates dignissimos
-          sapiente voluptas ex sit? Placeat, odit. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Doloribus reiciendis iste minus magni
-          culpa porro eaque id possimus saepe dolores explicabo commodi,
-          quisquam reprehenderit eveniet illum sapiente maiores officiis
-          assumenda!
-        </p>
-      </section>
-      <section>
-        <h3>Aplicaciones Móviles</h3>
-        <i class="fab fa-android"></i>
-        <i class="fab fa-apple"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-          corporis expedita temporibus officia. Necessitatibus, earum architecto
-          illum enim, similique numquam atque assumenda voluptates dignissimos
-          sapiente voluptas ex sit? Placeat, odit. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Doloribus reiciendis iste minus magni
-          culpa porro eaque id possimus saepe dolores explicabo commodi,
-          quisquam reprehenderit eveniet illum sapiente maiores officiis
-          assumenda!
-        </p>
-      </section>
-      <section>
-        <h3>E-Commerce</h3>
-        <i class="fas fa-credit-card"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-          corporis expedita temporibus officia. Necessitatibus, earum architecto
-          illum enim, similique numquam atque assumenda voluptates dignissimos
-          sapiente voluptas ex sit? Placeat, odit. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Doloribus reiciendis iste minus magni
-          culpa porro eaque id possimus saepe dolores explicabo commodi,
-          quisquam reprehenderit eveniet illum sapiente maiores officiis
-          assumenda!
-        </p>
+        <h2>Contacto</h2>
+        <form class="formulario">
+          <fieldset>
+            <legend>Por favor llene todos los campos</legend>
+            <div class="contenedor-campos">
+              <div class="campos">
+                <label for="nombre">Nombre</label>
+                <input
+                  class="input"
+                  type="text"
+                  name="nombre"
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+              <div class="campos">
+                <label for="tel">Teléfono</label>
+                <input
+                  class="input"
+                  type="text"
+                  name="tel"
+                  placeholder="Ingrese su teléfono"
+                />
+              </div>
+              <div class="campos">
+                <label for="correo">Correo</label>
+                <input
+                  class="input"
+                  type="email"
+                  name="correo"
+                  placeholder="Ingrese su email"
+                />
+              </div>
+              <div class="campos">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  class="input"
+                  name="mensaje"
+                  placeholder="Ingrese su mensaje"
+                ></textarea>
+              </div>
+            </div>
+            <!--CIERRE CONTENEDOR CAMPOS-->
+            <div>
+              <input class="boton" type="submit" value="ENVIAR" />
+            </div>
+          </fieldset>
+        </form>
       </section>
     </main>
-
-    <section>
-      <h2>Contacto</h2>
-      <form action="">
-        <fieldset>
-          <legend>Por favor llene todos los campos</legend>
-          <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" placeholder="Ingrese su nombre" />
-          </div>
-          <div>
-            <label for="tel">Teléfono</label>
-            <input type="text" name="tel" placeholder="Ingrese su teléfono" />
-          </div>
-          <div>
-            <label for="correo">Correo</label>
-            <input type="email" name="correo" placeholder="Ingrese su email" />
-          </div>
-          <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea
-              name="mensaje"
-              placeholder="Ingrese su mensaje"
-            ></textarea>
-          </div>
-          <div>
-            <input type="submit" value="ENVIAR" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-
-    <footer>
-      <p>Todos los derechos reservados &copy;, Gabriel Pereyra</p>
+    <footer class="footer">
+      <p>Todos los derechos reservados &copy; - Gabriel Pereyra</p>
     </footer>
   </body>
 </html>
