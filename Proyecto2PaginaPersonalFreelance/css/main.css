@@ -1,0 +1,236 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --hover: #06bace;
+  --gris: #757575;
+  --fuente: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--fuente);
+  background: linear-gradient(
+    to right,
+    #ada996,
+    #f2f2f2,
+    #dbdbdb,
+    #eaeaea
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+.titulo {
+  color: var(--primario);
+}
+.titulo span {
+  font-size: 2rem;
+}
+.contenedor {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.boton {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 2rem;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+.boton:hover {
+  background-color: var(--hover);
+  cursor: pointer;
+}
+.nav-bg {
+  background-color: var(--secundario);
+}
+
+.sombra {
+  box-shadow: 13px 22px 5px -4px rgba(150, 138, 150, 0.84);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+.navegacion-principal a:hover {
+  color: var(--oscuro);
+  background-color: var(--primario);
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contenido-hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+  color: var(--blanco);
+}
+
+.ubicacion i {
+  font-size: 3.4rem;
+}
+
+.ubicacion p {
+  font-size: 2rem;
+}
+.ubicacion {
+  display: flex;
+  align-items: flex-end;
+}
+
+/*SERVICIOS*/
+
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio h3 {
+  color: var(--secundario);
+  font-weight: 400;
+}
+.servicio p {
+  line-height: 2;
+  text-align: center;
+}
+
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.iconos i {
+  font-size: 3rem;
+  color: var(--oscuro);
+}
+/*Contacto*/
+.formulario {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  color: var(--primario);
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.campos {
+  margin-bottom: 1rem;
+}
+
+.campos textarea {
+  height: 16rem;
+}
+
+.campos label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input {
+  border: none;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+/*footer*/
+.footer {
+  text-align: center;
+}
