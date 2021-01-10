@@ -39,3 +39,15 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .columnas{
+        display: flex;
+        /* gap: 2rem; */
+        justify-content: space-between;
+    }
+    .entrada-blog{
+        flex: 0 0 calc(50% - 1rem);
+    }
+ }
+
+ /*In place to use justify-content + flex, we can use just gap, this propertie add an space between the elements who are part of the flex.*/
