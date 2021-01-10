@@ -39,3 +39,10 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) { 
+  .columnas{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+  }
+ }
