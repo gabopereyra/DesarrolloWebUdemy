@@ -37,3 +37,12 @@ p {
 }
 
 /** CODIGO AQUI **/
+.contenedor{
+    max-width: 120rem;
+    width: 93%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
