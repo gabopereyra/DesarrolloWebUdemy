@@ -83,6 +83,9 @@ img {
   margin-top: 5rem;
   text-align: center;
 }
+.barra {
+  padding-top: 4rem;
+}
 
 @media (min-width: 768px) {
   .header__texto {
@@ -177,6 +180,14 @@ img {
   font-weight: 400;
 }
 
-.widget-curso__label, .widget-curso__info{
+.widget-curso__label,
+.widget-curso__info {
   font-size: 2rem;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: var(--negro);
+  padding-bottom: 3rem;
+  margin-top: 3rem;
 }
