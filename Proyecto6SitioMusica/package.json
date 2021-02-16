@@ -1,0 +1,21 @@
+{
+  "name": "proyecto6sitiomusica",
+  "version": "1.0.0",
+  "description": "Project for learning Gulp y Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sass",
+    "Gulp",
+    "Web",
+    "Desing"
+  ],
+  "author": "Pereyra, Gabriel",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
