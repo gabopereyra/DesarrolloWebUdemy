@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
     <title>Rock & EDM Festival</title>
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
@@ -12,9 +12,9 @@
       <div class="contenedor contenido-header">
         <h1>Rock & EDM Festival</h1>
         <nav class="navegacion-principal">
-          <a href="#">Line Up</a>
-          <a href="#">Galería</a>
-          <a href="#">Boletos</a>
+          <a href="#lineup">Line Up</a>
+          <a href="#galeria">Galería</a>
+          <a href="#boletos">Boletos</a>
         </nav>
       </div>
     </header>
@@ -49,7 +49,7 @@
       </div>
     </div>
     <!--Fin contenedor info recital-->
-    <section class="lineup">
+    <section class="lineup" id="lineup">
       <h3>Line Up</h3>
       <p class="dia">Viernes 21</p>
       <div class="escenarios-contenedor contenedor">
@@ -104,12 +104,12 @@
       </div>
       <!-- Fin dia sábado -->
     </section> <!--FIN SECCION calendario-->
-    <section class="galeria contenedor">
+    <section class="galeria contenedor" id="galeria">
       <h3>GALERIA</h3>
       <ul class="galeria-imagenes">
       </ul>
     </section> <!--fin seccion imagenes-->
-    <section class="boletos bg-verde">
+    <section class="boletos bg-verde" id="boletos">
       <h3>BOLETOS</h3>
       <div class="contenedor-boletos contenedor">
         <div class="basico plan">
@@ -183,6 +183,6 @@
     </footer>
 
 
-    <script src="build/js/bundle.js"></script>
+    <script src="build/js/bundle.min.js"></script>
   </body>
 </html>
