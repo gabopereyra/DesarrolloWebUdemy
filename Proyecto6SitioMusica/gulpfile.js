@@ -5,6 +5,17 @@ const notify = require('gulp-notify');
 const webp = require('gulp-webp');
 const concat = require('gulp-concat');
 
+//Utilidades CSS
+const autoprefixes = require('autoprefixer');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
+
+//Utilidades JS
+const terser = require('gulp-terser-js');
+const rename = require('gulp-rename');
+
 //Paths
 const paths = {
     imagenes: ('src/img/**/*'),
@@ -15,7 +26,10 @@ const paths = {
 //funcion que compila SASS
 function css(){
     return src(paths.scss)
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(postcss([autoprefixer(), cssnano() ]))
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('./build/css'))
 }
 
@@ -29,7 +43,11 @@ function minificarCss(){
 
 function javaScript(){
     return src(paths.js)
+    .pipe(sourcemaps.init())
     .pipe(concat('bundle.js'))
+    .pipe(terser())
+    .pipe(sourcemaps.write('.'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(dest('./build/js'))
 }
 
